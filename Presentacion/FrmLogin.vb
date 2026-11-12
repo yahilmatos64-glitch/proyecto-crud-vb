@@ -24,8 +24,9 @@ Public Class FrmLogin
                 "Bienvenido " & usuario.Nombre
             )
 
+            Dim menu As New FrmMenuPrincipal()
 
-            FrmMenuPrincipal.Show()
+            menu.Show()
 
             Me.Hide()
 
