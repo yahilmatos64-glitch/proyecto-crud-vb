@@ -1,0 +1,11 @@
+# Visual Studio files
+.vs/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+_ReSharper*/
+*.user
+*.suo
+*.cache
+*.sln.docstates
