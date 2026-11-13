@@ -34,6 +34,13 @@ Partial Class FrmEstudiantes
         btnGuardar = New Button()
         btnEditar = New Button()
         btnEliminar = New Button()
+        Label1 = New Label()
+        Label2 = New Label()
+        Label3 = New Label()
+        Label4 = New Label()
+        Label5 = New Label()
+        Label6 = New Label()
+        Label7 = New Label()
         CType(dgvEstudiantes, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -123,18 +130,88 @@ Partial Class FrmEstudiantes
         ' 
         ' btnEliminar
         ' 
-        btnEliminar.Location = New Point(542, 205)
+        btnEliminar.Location = New Point(542, 186)
         btnEliminar.Name = "btnEliminar"
         btnEliminar.Size = New Size(75, 23)
         btnEliminar.TabIndex = 11
         btnEliminar.Text = "Eliminar"
         btnEliminar.UseVisualStyleBackColor = True
         ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(112, 20)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(51, 15)
+        Label1.TabIndex = 12
+        Label1.Text = "Nombre"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(112, 67)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(51, 15)
+        Label2.TabIndex = 13
+        Label2.Text = "Apellido"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Location = New Point(112, 107)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(44, 15)
+        Label3.TabIndex = 14
+        Label3.Text = "Cedula"
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Location = New Point(112, 156)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(53, 15)
+        Label4.TabIndex = 15
+        Label4.Text = "Telefono"
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Location = New Point(112, 214)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(43, 15)
+        Label5.TabIndex = 16
+        Label5.Text = "Correo"
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Location = New Point(112, 266)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(57, 15)
+        Label6.TabIndex = 17
+        Label6.Text = "Direccion"
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Location = New Point(112, 314)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(69, 15)
+        Label7.TabIndex = 18
+        Label7.Text = "Nacimiento"
+        ' 
         ' FrmEstudiantes
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Label7)
+        Controls.Add(Label6)
+        Controls.Add(Label5)
+        Controls.Add(Label4)
+        Controls.Add(Label3)
+        Controls.Add(Label2)
+        Controls.Add(Label1)
         Controls.Add(btnEliminar)
         Controls.Add(btnEditar)
         Controls.Add(btnGuardar)
@@ -166,4 +243,11 @@ Partial Class FrmEstudiantes
     Friend WithEvents btnGuardar As Button
     Friend WithEvents btnEditar As Button
     Friend WithEvents btnEliminar As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label7 As Label
 End Class

@@ -36,12 +36,14 @@ Partial Class FrmMenuPrincipal
         ProcesosToolStripMenuItem = New ToolStripMenuItem()
         InscripcionesToolStripMenuItem = New ToolStripMenuItem()
         PagosToolStripMenuItem = New ToolStripMenuItem()
+        EstadísticasToolStripMenuItem = New ToolStripMenuItem()
+        DashboardToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         SuspendLayout()
         ' 
         ' MenuStrip1
         ' 
-        MenuStrip1.Items.AddRange(New ToolStripItem() {SisToolStripMenuItem, MantenimientoToolStripMenuItem, ProcesosToolStripMenuItem})
+        MenuStrip1.Items.AddRange(New ToolStripItem() {SisToolStripMenuItem, MantenimientoToolStripMenuItem, ProcesosToolStripMenuItem, EstadísticasToolStripMenuItem})
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
         MenuStrip1.Size = New Size(800, 24)
@@ -58,13 +60,13 @@ Partial Class FrmMenuPrincipal
         ' CerrarSesionToolStripMenuItem
         ' 
         CerrarSesionToolStripMenuItem.Name = "CerrarSesionToolStripMenuItem"
-        CerrarSesionToolStripMenuItem.Size = New Size(143, 22)
+        CerrarSesionToolStripMenuItem.Size = New Size(180, 22)
         CerrarSesionToolStripMenuItem.Text = "Cerrar Sesion"
         ' 
         ' SalirToolStripMenuItem
         ' 
         SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        SalirToolStripMenuItem.Size = New Size(143, 22)
+        SalirToolStripMenuItem.Size = New Size(180, 22)
         SalirToolStripMenuItem.Text = "Salir"
         ' 
         ' MantenimientoToolStripMenuItem
@@ -77,37 +79,37 @@ Partial Class FrmMenuPrincipal
         ' UsuarioToolStripMenuItem
         ' 
         UsuarioToolStripMenuItem.Name = "UsuarioToolStripMenuItem"
-        UsuarioToolStripMenuItem.Size = New Size(180, 22)
+        UsuarioToolStripMenuItem.Size = New Size(134, 22)
         UsuarioToolStripMenuItem.Text = "Usuario"
         ' 
         ' EstudiantesToolStripMenuItem
         ' 
         EstudiantesToolStripMenuItem.Name = "EstudiantesToolStripMenuItem"
-        EstudiantesToolStripMenuItem.Size = New Size(180, 22)
+        EstudiantesToolStripMenuItem.Size = New Size(134, 22)
         EstudiantesToolStripMenuItem.Text = "Estudiantes"
         ' 
         ' ProfesoresToolStripMenuItem
         ' 
         ProfesoresToolStripMenuItem.Name = "ProfesoresToolStripMenuItem"
-        ProfesoresToolStripMenuItem.Size = New Size(180, 22)
+        ProfesoresToolStripMenuItem.Size = New Size(134, 22)
         ProfesoresToolStripMenuItem.Text = "Profesores"
         ' 
         ' IdiomasToolStripMenuItem
         ' 
         IdiomasToolStripMenuItem.Name = "IdiomasToolStripMenuItem"
-        IdiomasToolStripMenuItem.Size = New Size(180, 22)
+        IdiomasToolStripMenuItem.Size = New Size(134, 22)
         IdiomasToolStripMenuItem.Text = "Idiomas"
         ' 
         ' CursosToolStripMenuItem
         ' 
         CursosToolStripMenuItem.Name = "CursosToolStripMenuItem"
-        CursosToolStripMenuItem.Size = New Size(180, 22)
+        CursosToolStripMenuItem.Size = New Size(134, 22)
         CursosToolStripMenuItem.Text = "Cursos"
         ' 
         ' AulasToolStripMenuItem
         ' 
         AulasToolStripMenuItem.Name = "AulasToolStripMenuItem"
-        AulasToolStripMenuItem.Size = New Size(180, 22)
+        AulasToolStripMenuItem.Size = New Size(134, 22)
         AulasToolStripMenuItem.Text = "Aulas"
         ' 
         ' ProcesosToolStripMenuItem
@@ -128,6 +130,19 @@ Partial Class FrmMenuPrincipal
         PagosToolStripMenuItem.Name = "PagosToolStripMenuItem"
         PagosToolStripMenuItem.Size = New Size(143, 22)
         PagosToolStripMenuItem.Text = "Pagos"
+        ' 
+        ' EstadísticasToolStripMenuItem
+        ' 
+        EstadísticasToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {DashboardToolStripMenuItem})
+        EstadísticasToolStripMenuItem.Name = "EstadísticasToolStripMenuItem"
+        EstadísticasToolStripMenuItem.Size = New Size(79, 20)
+        EstadísticasToolStripMenuItem.Text = "Estadísticas"
+        ' 
+        ' DashboardToolStripMenuItem
+        ' 
+        DashboardToolStripMenuItem.Name = "DashboardToolStripMenuItem"
+        DashboardToolStripMenuItem.Size = New Size(131, 22)
+        DashboardToolStripMenuItem.Text = "Dashboard"
         ' 
         ' FrmMenuPrincipal
         ' 
@@ -158,4 +173,6 @@ Partial Class FrmMenuPrincipal
     Friend WithEvents ProcesosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents InscripcionesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PagosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EstadísticasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DashboardToolStripMenuItem As ToolStripMenuItem
 End Class

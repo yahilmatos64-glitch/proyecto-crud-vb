@@ -32,7 +32,7 @@ Partial Class FrmLogin
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(361, 132)
+        Label1.Location = New Point(335, 195)
         Label1.Name = "Label1"
         Label1.Size = New Size(50, 15)
         Label1.TabIndex = 0
@@ -40,7 +40,7 @@ Partial Class FrmLogin
         ' 
         ' txtUsuario
         ' 
-        txtUsuario.Location = New Point(436, 123)
+        txtUsuario.Location = New Point(391, 192)
         txtUsuario.Name = "txtUsuario"
         txtUsuario.Size = New Size(72, 23)
         txtUsuario.TabIndex = 1
@@ -48,7 +48,7 @@ Partial Class FrmLogin
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(354, 170)
+        Label2.Location = New Point(315, 250)
         Label2.Name = "Label2"
         Label2.Size = New Size(70, 15)
         Label2.TabIndex = 2
@@ -56,15 +56,15 @@ Partial Class FrmLogin
         ' 
         ' txtContrasena
         ' 
-        txtContrasena.Location = New Point(438, 165)
+        txtContrasena.Location = New Point(391, 250)
         txtContrasena.Name = "txtContrasena"
-        txtContrasena.Size = New Size(70, 23)
+        txtContrasena.Size = New Size(72, 23)
         txtContrasena.TabIndex = 3
         txtContrasena.UseSystemPasswordChar = True
         ' 
         ' btnIngresar
         ' 
-        btnIngresar.Location = New Point(357, 245)
+        btnIngresar.Location = New Point(371, 316)
         btnIngresar.Name = "btnIngresar"
         btnIngresar.Size = New Size(122, 40)
         btnIngresar.TabIndex = 4
@@ -73,7 +73,7 @@ Partial Class FrmLogin
         ' 
         ' FrmLogin
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
         Controls.Add(btnIngresar)
