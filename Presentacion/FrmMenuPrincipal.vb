@@ -10,4 +10,12 @@
         form.Show()
 
     End Sub
+
+    Private Sub ProfesoresToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfesoresToolStripMenuItem.Click
+
+        Dim form As New FrmProfesores()
+
+        form.Show()
+
+    End Sub
 End Class

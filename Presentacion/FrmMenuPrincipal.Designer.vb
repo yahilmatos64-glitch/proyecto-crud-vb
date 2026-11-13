@@ -58,13 +58,13 @@ Partial Class FrmMenuPrincipal
         ' CerrarSesionToolStripMenuItem
         ' 
         CerrarSesionToolStripMenuItem.Name = "CerrarSesionToolStripMenuItem"
-        CerrarSesionToolStripMenuItem.Size = New Size(180, 22)
+        CerrarSesionToolStripMenuItem.Size = New Size(143, 22)
         CerrarSesionToolStripMenuItem.Text = "Cerrar Sesion"
         ' 
         ' SalirToolStripMenuItem
         ' 
         SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        SalirToolStripMenuItem.Size = New Size(180, 22)
+        SalirToolStripMenuItem.Size = New Size(143, 22)
         SalirToolStripMenuItem.Text = "Salir"
         ' 
         ' MantenimientoToolStripMenuItem
@@ -120,18 +120,18 @@ Partial Class FrmMenuPrincipal
         ' InscripcionesToolStripMenuItem
         ' 
         InscripcionesToolStripMenuItem.Name = "InscripcionesToolStripMenuItem"
-        InscripcionesToolStripMenuItem.Size = New Size(180, 22)
+        InscripcionesToolStripMenuItem.Size = New Size(143, 22)
         InscripcionesToolStripMenuItem.Text = "Inscripciones"
         ' 
         ' PagosToolStripMenuItem
         ' 
         PagosToolStripMenuItem.Name = "PagosToolStripMenuItem"
-        PagosToolStripMenuItem.Size = New Size(180, 22)
+        PagosToolStripMenuItem.Size = New Size(143, 22)
         PagosToolStripMenuItem.Text = "Pagos"
         ' 
         ' FrmMenuPrincipal
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
         Controls.Add(MenuStrip1)
