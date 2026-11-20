@@ -10,7 +10,10 @@ Public Class EstudianteBLL
         e.Cedula = Validador.SoloDigitos(e.Cedula)
         Validador.Exigir(e.Cedula.Length = 11, "La cédula debe tener 11 dígitos.")
         Validador.Exigir(Not datos.ExisteCedula(e.Cedula, e.IdPersona), "Ya existe una persona con esa cédula.")
-        Validador.Exigir(e.FechaNacimiento < Date.Today, "La fecha de nacimiento no es válida.")
+        Validador.Exigir(e.FechaNacimiento <= Date.Today.AddYears(-3) AndAlso e.FechaNacimiento >= Date.Today.AddYears(-100),
+                         "La fecha de nacimiento no es válida: el estudiante debe tener entre 3 y 100 años.")
+        Validador.Exigir(e.FechaRegistro = Date.MinValue OrElse (e.FechaRegistro <= Date.Today AndAlso e.FechaRegistro > e.FechaNacimiento),
+                         "La fecha de registro no puede ser futura ni anterior al nacimiento.")
         Validador.Exigir(String.IsNullOrWhiteSpace(e.Correo) OrElse Validador.CorreoValido(e.Correo), "El correo no es válido.")
         Validador.Exigir(String.IsNullOrWhiteSpace(e.Correo) OrElse Not datos.ExisteCorreo(e.Correo.Trim(), e.IdPersona), "Ese correo ya está registrado.")
         Validador.Exigir({"activo", "inactivo", "retirado"}.Contains(e.Estado), "El estado no es válido.")

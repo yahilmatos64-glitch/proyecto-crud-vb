@@ -51,7 +51,7 @@ Public MustInherit Class FormMantenimiento
             panelDatos.Controls.Add(control)
         Next
 
-        Dim botones As New FlowLayoutPanel With {.Dock = DockStyle.Bottom, .Height = 56, .Padding = New Padding(4, 10, 4, 4)}
+        Dim botones As New FlowLayoutPanel With {.Dock = DockStyle.Bottom, .Height = 56, .Padding = New Padding(4, 10, 4, 4), .WrapContents = False}
         botones.Controls.Add(CrearBoton("Nuevo", AddressOf Nuevo))
         botones.Controls.Add(CrearBoton("Guardar", AddressOf Guardar, True))
         botones.Controls.Add(CrearBoton("Eliminar", AddressOf Eliminar))
@@ -78,7 +78,7 @@ Public MustInherit Class FormMantenimiento
     End Sub
 
     Private Function CrearBoton(texto As String, accion As Action, Optional principal As Boolean = False) As Button
-        Dim boton As New Button With {.Text = texto, .Width = 88, .Height = 32, .FlatStyle = FlatStyle.Flat}
+        Dim boton As New Button With {.Text = texto, .Width = 82, .Height = 32, .FlatStyle = FlatStyle.Flat}
         If principal Then
             boton.BackColor = Color.FromArgb(31, 78, 121)
             boton.ForeColor = Color.White

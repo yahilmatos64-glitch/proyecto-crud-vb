@@ -80,12 +80,7 @@ Public Class FrmDashboard
             rejillaMetodos.DataSource = reportes.IngresosPorMetodo()
             rejillaOcupacion.DataSource = reportes.OcupacionPorGrupo()
             For Each rejilla As DataGridView In {rejillaMorosos, rejillaMetodos, rejillaOcupacion}
-                For Each columna As DataGridViewColumn In rejilla.Columns
-                    If columna.ValueType Is GetType(Decimal) Then
-                        columna.DefaultCellStyle.Format = "N2"
-                        columna.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
-                    End If
-                Next
+                Rejillas.AjustarColumnas(rejilla)
             Next
             Buscar(Nothing, EventArgs.Empty)
         Catch ex As Exception
